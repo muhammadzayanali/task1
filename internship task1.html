@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muhammad zayan ali</title>
+    <link rel="stylesheet" href="internship task1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="animated-section">
+            <p class="big">Hi, I'm <span class="highlight">Muhammad zayan ali</span></p>
+            <p class="animation">I'M A <span id="element"></span></p>
+
+            <p> I'm a passionate and innovative WEB DEVELOPMENT,APP DEVELOPMENT,SOFTWARE DEVELOPMENT
+                dedicated to pushing the boundaries of creativity and technology. With a relentless drive for
+                excellence, I
+                 prestrive to deliver impactful solutions that exceed expectations and inspire meaningful connections.
+            </p>
+        </section>
+
+        <section id="about" class="animated-section">
+            <h2>About Me</h2>
+            <p>~> I am based in <span class="highlight">Lahore</span>,<span class="highlight">Pakistan</span> .
+                <br>
+                ~> I am a Second semester student, pursuing a Bachelor's in <span class="highlight"> Computer
+                    Science</span> from
+                <span class="highlight">Superior university</span>.
+                <br>
+                ~> My interests are centered around WEB DEVELOPMENT ,APP DEVELOPMENT,SOFTWARE DEVELOPMENT and its
+                applications.I
+                also intrested in machine learning and also in cloud computing .
+            </p>
+            <h2>Education and Qualifications:</h2>
+            <P>
+                I hold a <span class="highlight">BSCS</span> from <span class="highlight">Superior university</span>,
+                where I honed my
+                skills in <span class="highlight">programming fundamental and in OOPs</span> . Throughout my academic
+                journey, I've
+                undertaken projects such as <span class="highlight">student management system</span>, <span
+                    class="highlight">solar
+                    system information system</span> which have equipped me with
+                practical experience and a solid foundation in BSCS.
+            </P>
+            
+        </section>
+
+        <section id="projects" class="animated-section">
+            <h2>My Projects</h2>
+            <div class="project" id="project1">
+                <h2>Solar system information system</h2>
+                <p>I made the solar system information system in c++ in which i use all the concept of OOPs</p>
+            </div>
+            <div class="project" id="project2">
+                <h2>Personal Portfolio</h2>
+                <p>I made the personal potfolio of myself in which i use the html,css and made it just like advance
+                    website</p>
+            </div>
+        </section>
+        
+        <section class="skill-sec">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    C/C++
+                    <progress value="75" max="100"></progress>
+                    <p> 75%</p>
+                </div>
+                <div class="skill">
+                    HTML
+                    <progress value="75" max="100"></progress>
+                    <p> 75%</p>
+                </div>
+                <div class="skill">
+                    CSS
+                    <progress value="50" max="100"></progress>
+                    <p> 50%</p>
+                </div>
+                <div class="skill">
+                    JavaScript
+                    <progress value="40" max="100"></progress>
+                    <p> 40%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="animated-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 muhammad zayan ali. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/muhammad_zayan__ali/" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-zayan-ali/" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/muhammadzayanali" class="icon"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="internship task1.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend web developer', 'web designer', 'Researcher', 'Software developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
