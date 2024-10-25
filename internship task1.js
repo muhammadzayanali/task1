@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contact-form');
     const sections = document.querySelectorAll('.animated-section');
 
-    // Smooth scrolling for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -24,9 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', checkScroll);
-    checkScroll(); // Check on load
+    checkScroll(); 
 
-    // Handle form submission
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -34,18 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
 
-        // Here you would typically send this data to a server
         console.log('Form submitted:');
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Message:', message);
 
-        // Clear the form
         contactForm.reset();
         alert('Thank you for your message!');
     });
 
-    // Project hover effect
     const projects = document.querySelectorAll('.project');
     projects.forEach(project => {
         project.addEventListener('mouseenter', () => {
